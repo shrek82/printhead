@@ -1,0 +1,6 @@
+{
+  "name": "Inkjet Printhead Diagnostic & Anti-Clog Maintenance Tool",
+  "description": "专业喷墨打印机防堵与喷头断线检测工具，提供CMYK/6色纯色阶梯、喷嘴断线阶梯线、微距解析度标尺及定期防堵冲刷维护页。",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
