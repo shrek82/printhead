@@ -57,8 +57,9 @@ export const SidebarControls: React.FC<SidebarControlsProps> = ({
     });
   };
 
-  const handleExportSvg = () => {
-    const success = exportToSvg('printable-test-page', `喷墨打印机测试页-${config.preset}.svg`);
+  const handleExportSvg = async () => {
+    onShowToast('正在导出矢量 SVG，请稍候...');
+    const success = await exportToSvg('printable-test-page', `喷墨打印机测试页-${config.preset}.svg`);
     if (success) {
       onShowToast('✓ 矢量无损 SVG 文件已下载');
     } else {

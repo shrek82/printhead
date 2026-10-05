@@ -61,8 +61,9 @@ export default function App() {
     showToast('已生成并下载「每周防堵打印提醒.ics」日历文件，导入手机/系统日历即可定期提醒！');
   };
 
-  const handleExportSvg = () => {
-    const success = exportToSvg('printable-test-page', `喷墨打印机测试页-${config.preset}.svg`);
+  const handleExportSvg = async () => {
+    showToast('正在导出矢量 SVG，请稍候...');
+    const success = await exportToSvg('printable-test-page', `喷墨打印机测试页-${config.preset}.svg`);
     if (success) {
       showToast('✓ 矢量无损 SVG 文件已下载');
     } else {
